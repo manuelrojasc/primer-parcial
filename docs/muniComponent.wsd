@@ -1,0 +1,18 @@
+@startuml
+package "Web " {
+  HTTPS - ["SISTEMA DE LOGISTICA MUNI-FAKE-CORRUPT"]
+}
+
+package "OSCE" {
+  HTTPS- [API-OSCE]
+database "JSON bd" {
+
+    [Data OSCE]
+}
+  }
+
+[Computador] -->["SISTEMA DE LOGISTICA MUNI-FAKE-CORRUPT"]
+[Laptop]-->["SISTEMA DE LOGISTICA MUNI-FAKE-CORRUPT"]
+[Celular]-->["SISTEMA DE LOGISTICA MUNI-FAKE-CORRUPT"]
+[API-OSCE]-->[Data OSCE]
+@enduml
